@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Orientación Educativa</title>
+    <!-- Otros metadatos y etiquetas -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='imagenes/icon.png') }}" />
+    <!--SWEETALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!---link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--Link de iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Link de referencias a CSS-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <!--Link de referencias js-->
+    <script type="text/javascript" src="{{ url_for('static', filename='script/app.js') }}"></script>
+
+</head>
+
+<body>
+
+    <!--vista principal-->
+    <div class="scroll-down">
+
+        <h1>¡Bienvenido!</h1>
+
+
+        <div class="mb-3">
+            <input type="text" class="form-control" id="cantidadM" name="cantidadM"
+                aria-describedby="basic-addon3 basic-addon4" placeholder="Cantidad de materias">
+            
+        </div>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <path
+                d="M16 3C8.832031 3 3 8.832031 3 16s5.832031 13 13 13 13-5.832031 13-13S23.167969 3 16 3zm0 2c6.085938 0 11 4.914063 11 11 0 6.085938-4.914062 11-11 11-6.085937 0-11-4.914062-11-11C5 9.914063 9.914063 5 16 5zm-1 4v10.28125l-4-4-1.40625 1.4375L16 23.125l6.40625-6.40625L21 15.28125l-4 4V9z" />
+        </svg>
+    </div>
+
+    <!--vista principal-->
+
+
+
+
+    <div class="container mb-3">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-image mb-3">
+                            <img src="{{ url_for('static', filename='imagenes/logo.png') }}" alt="orientación educativa"
+                                style="height:50px; width: 50px;">
+                        </div>
+                        <br>
+                        <h1 class="modal-title mb-3">Orientación Educativa</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">No. Materia</th>
+                                    <th scope="col">Parcial 1</th>
+                                    <th scope="col">Parcial 2</th>
+                                    <th scope="col">Parcial 3</th>
+                                    <th scope="col">Final</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light " data-bs-dismiss="modal">Regresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
