@@ -28,6 +28,7 @@ function actualizarTabla(numMaterias) {
             <td><input type="number" class="form-control" placeholder="Final" id="final-${i}"></td>
         `;
         document.querySelector('.modal-body tbody').appendChild(row);
+        
     }
 }
 
